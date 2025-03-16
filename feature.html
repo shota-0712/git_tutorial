@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Branchについて</title>
+</head>
+<body>
+    <h1>Git Branchについて</h1>
+    <p>Gitのブランチは、プロジェクトの独立した開発ラインを作成するための機能です。ブランチを使用することで、メインのコードベースに影響を与えずに新しい機能や修正を試すことができます。</p>
+    <h2>ブランチの作成</h2>
+    <p>新しいブランチを作成するには、以下のコマンドを使用します:</p>
+    <pre><code>git branch ブランチ名</code></pre>
+    <h2>ブランチの切り替え</h2>
+    <p>別のブランチに切り替えるには、以下のコマンドを使用します:</p>
+    <pre><code>git checkout ブランチ名</code></pre>
+    <h2>ブランチのマージ</h2>
+    <p>ブランチをマージするには、以下のコマンドを使用します:</p>
+    <pre><code>git merge ブランチ名</code></pre>
+    <h2>新しい機能の追加</h2>
+    <p>新しい機能を追加するには、まず新しいブランチを作成し、そのブランチで開発を行います。開発が完了したら、メインブランチにマージします。</p>
+    <pre><code>git branch 新しい機能ブランチ名
+git checkout 新しい機能ブランチ名
+# 新しい機能を開発する
+git checkout main
+git merge 新しい機能ブランチ名</code></pre>
+</body>
+</html>
